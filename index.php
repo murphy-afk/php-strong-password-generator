@@ -16,6 +16,17 @@ function create_password($n){
   <title>Password generator</title>
 </head>
 <body>
-  <?php echo create_password(6) ?>
+  <div class="container d-flex flex-column align-items-center">
+    <h1 class="py-3">Password generator</h1>
+    <form action="index.php" class="my-4 w-75 d-flex flex-column align-items-center">
+        <label for="lenght" class="form-label">choose the lenght of your password</label>
+        <input type="number" name="lenght" id="lenght" class="form-control mb-4 w-50 text-center" placeholder="0">
+      <button class="btn btn-primary">generate</button>
+    </form>
+
+    <?php 
+  $lenght = $_GET['lenght'] ?? 0;
+  echo "<h3>" . create_password($lenght) . "</h3>" ?>
+  </div>
 </body>
 </html>
