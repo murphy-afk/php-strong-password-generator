@@ -1,4 +1,4 @@
-<?php require 'functions.php'; ?>
+<?php require_once 'functions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,16 +13,12 @@
 <body>
   <div class="container d-flex flex-column align-items-center">
     <h1 class="py-3">Password generator</h1>
-    <form action="index.php" class="my-4 w-75 d-flex flex-column align-items-center">
+    <form action="result.php" class="my-4 w-75 d-flex flex-column align-items-center">
       <label for="length" class="form-label">choose the length of your password</label>
       <input type="number" name="length" id="length" class="form-control mb-4 w-50 text-center" placeholder="0">
       <!-- <input type="checkbox" name="symbols" id="symbols"> -->
       <button class="btn btn-primary">generate</button>
     </form>
-
-    <?php
-    $length = $_GET['length'] ?? 0;
-    echo "<h3>" . create_password($length) . "</h3>" ?>
   </div>
 </body>
 
