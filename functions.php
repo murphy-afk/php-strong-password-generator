@@ -9,6 +9,10 @@ function create_password()
   $symbols = isset($_GET['symbols']) ? '%&/()=_-?!' : '';
 
   $allChars = $lowercase . $uppercase . $numbers . $symbols;
+  if (!$symbols && !$numbers && !$uppercase && !$lowercase) {
+    return "can't generate a password with no charachters";
+  }
+  ;
 
   for ($i = 0; $i < $length; $i++) {
     $randPos = rand(0, (strlen($allChars) - 1));
