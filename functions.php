@@ -6,7 +6,7 @@ function create_password()
   $lowercase = isset($_GET['lowercase']) ? 'abcdefghijklmnopqrstuvwxyz' : '';
   $uppercase = isset($_GET['uppercase']) ? 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' : '';
   $numbers = isset($_GET['numbers']) ? '1234567890' : '';
-  $symbols = isset($_GET['symbols']) ? '!"£$%&/()=' : '';
+  $symbols = isset($_GET['symbols']) ? '%&/()=_-?!' : '';
 
   $allChars = $lowercase . $uppercase . $numbers . $symbols;
 

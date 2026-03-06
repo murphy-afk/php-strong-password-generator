@@ -18,19 +18,19 @@
       <input type="number" name="length" id="length" class="form-control mb-4 w-25 text-center" placeholder="0">
       <div class="mb-4">
         <div class="form-check">
-          <input type="checkbox" name="symbols" id="symbols" class="form-check-input">
+          <input type="checkbox" name="symbols" id="symbols" class="form-check-input" checked>
           <label for="symbols" class="form-check-label">symbols</label>
         </div>
         <div class="form-check">
-          <input type="checkbox" name="numbers" id="numbers" class="form-check-input">
+          <input type="checkbox" name="numbers" id="numbers" class="form-check-input" checked>
           <label for="symbols" class="form-check-label">numbers</label>
         </div>
         <div class="form-check">
-          <input type="checkbox" name="uppercase" id="uppercase" class="form-check-input">
+          <input type="checkbox" name="uppercase" id="uppercase" class="form-check-input" checked>
           <label for="symbols" class="form-check-label">uppercase letters</label>
         </div>
         <div class="form-check">
-          <input type="checkbox" name="lowercase" id="lowercase" class="form-check-input">
+          <input type="checkbox" name="lowercase" id="lowercase" class="form-check-input" checked>
           <label for="symbols" class="form-check-label">lowercase letters</label>
         </div>
       </div>
