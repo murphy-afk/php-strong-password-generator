@@ -15,7 +15,7 @@
     <h1 class="py-3">Password generator</h1>
     <form action="result.php" class="my-4 w-75 d-flex flex-column align-items-center">
       <label for="length" class="form-label">choose the length of your password</label>
-      <input type="number" name="length" id="length" class="form-control mb-4 w-25 text-center" placeholder="0">
+      <input type="number" required min="1" name="length" id="length" class="form-control mb-4 w-25 text-center" placeholder="0">
       <div class="mb-4">
         <div class="form-check">
           <input type="checkbox" name="symbols" id="symbols" class="form-check-input" checked>
