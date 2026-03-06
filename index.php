@@ -15,9 +15,26 @@
     <h1 class="py-3">Password generator</h1>
     <form action="result.php" class="my-4 w-75 d-flex flex-column align-items-center">
       <label for="length" class="form-label">choose the length of your password</label>
-      <input type="number" name="length" id="length" class="form-control mb-4 w-50 text-center" placeholder="0">
-      <!-- <input type="checkbox" name="symbols" id="symbols"> -->
-      <button class="btn btn-primary">generate</button>
+      <input type="number" name="length" id="length" class="form-control mb-4 w-25 text-center" placeholder="0">
+      <div class="mb-4">
+        <div class="form-check">
+          <input type="checkbox" name="symbols" id="symbols" class="form-check-input">
+          <label for="symbols" class="form-check-label">symbols</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="numbers" id="numbers" class="form-check-input">
+          <label for="symbols" class="form-check-label">numbers</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="uppercase" id="uppercase" class="form-check-input">
+          <label for="symbols" class="form-check-label">uppercase letters</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="lowercase" id="lowercase" class="form-check-input">
+          <label for="symbols" class="form-check-label">lowercase letters</label>
+        </div>
+      </div>
+      <button class="btn btn-primary">GENERATE</button>
     </form>
   </div>
 </body>

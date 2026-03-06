@@ -16,8 +16,7 @@
     <hr>
     <h3>
       <?php
-      $length = $_GET['length'] ?? 0;
-      echo "<h3>" . create_password($length) . "</h3>"
+      echo "<h3>" . create_password() . "</h3>"
         ?>
     </h3>
   </div>
