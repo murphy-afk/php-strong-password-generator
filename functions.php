@@ -10,7 +10,7 @@ function create_password()
 
   $allChars = $lowercase . $uppercase . $numbers . $symbols;
   if (!$symbols && !$numbers && !$uppercase && !$lowercase) {
-    return "can't generate a password with no charachters";
+    return "can't generate a password with no characters";
   }
   ;
 
